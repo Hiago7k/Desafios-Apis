@@ -10,7 +10,4 @@
     {
         Console.WriteLine($"Erro ao realizar requisicao na API {ex:Message}");
     }
-
-
-    
 }
