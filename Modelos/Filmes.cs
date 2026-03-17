@@ -12,4 +12,16 @@ internal class Filmes
     public string Equipe { get; set; }
     [JsonPropertyName("rank")]
     public int Rank { get; set; }
+
+    public void ExibirDetalhes()
+    {
+        Console.WriteLine("*****************");
+        Console.WriteLine("Detalhes do Filme");
+        Console.WriteLine($"\nNome do filme: {NomeDoFilme}");
+        Console.WriteLine($"Ano de lancamento: {AnoDoFilme}");
+        Console.WriteLine($"Elenco: {Equipe}");
+        Console.WriteLine($"Posicao do rank: {Rank}");
+        Console.WriteLine("*****************");
+
+    }
 }
