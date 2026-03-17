@@ -5,13 +5,13 @@ namespace Desafios_Apis.Modelos;
 internal class Filmes
 {
     [JsonPropertyName("title")]
-    public string NomeDoFilme { get; set; }
+    public string? NomeDoFilme { get; set; }
     [JsonPropertyName("year")]
-    public int AnoDoFilme { get; set; }
+    public string? AnoDoFilme { get; set; }
     [JsonPropertyName("crew")]
-    public string Equipe { get; set; }
+    public string? Equipe { get; set; }
     [JsonPropertyName("rank")]
-    public int Rank { get; set; }
+    public string? Rank { get; set; }
 
     public void ExibirDetalhes()
     {
